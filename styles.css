@@ -17,7 +17,7 @@ html {
 
 .header__ul {
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content: flex-end;
   align-items: unset;
   gap: 1rem;

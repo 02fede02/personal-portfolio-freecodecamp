@@ -1,8 +1,8 @@
 
 $color-1: #BE3144;
-@mixin flex($flex, $direction : row, $justify : unset, $align : unset) {
-    display: $flex;
-    flex-direction: $direction;
+@mixin flex( $direction : row, $wrap : nowrap, $justify : unset, $align : unset) {
+    display: flex;
+    flex-flow: $direction $wrap;
     justify-content: $justify;
     align-items: $align;
 }
@@ -25,7 +25,7 @@ html{
 }
 
 .header__ul{
-    @include flex(flex, row, flex-end, );
+    @include flex( row, nowrap, flex-end, unset );
     gap: 1rem;
     font-size: 2em;
 }

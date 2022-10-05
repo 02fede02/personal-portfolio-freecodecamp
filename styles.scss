@@ -20,11 +20,24 @@ html{
 .header__ul{
     @include flex( row, nowrap, flex-end, unset );
     gap: 1rem;
-    font-size: 2em;
+    font-size: 1.5rem;
     height: 100%; // No se porque es esto 
 
     // Aplicar medai queries y ver que onda con el menu fijo  si se pude hacer de otra forma
     @include mv(){
         font-size: 1em;
+        // width: auto;
     }
+
+    
+}
+
+.header__li{
+    list-style: none;
+    padding: 1.25rem;
+}
+
+.header__a{
+    color: #ffffff;
+    text-decoration: none;
 }

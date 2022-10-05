@@ -1,12 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  overflow-x: hidden;
-}
-
 .header__nav {
   background-color: #BE3144;
   border-bottom: solid 1px #000000;
@@ -22,7 +13,6 @@ html {
   align-items: unset;
   gap: 1rem;
   font-size: 1.5rem;
-  height: 100%;
 }
 @media screen and (max-width: 480px) {
   .header__ul {
@@ -33,9 +23,44 @@ html {
 .header__li {
   list-style: none;
   padding: 1.25rem;
+  transition: 0.3s;
+}
+.header__li:hover {
+  cursor: pointer;
+  background-color: #45567D;
 }
 
 .header__a {
   color: #ffffff;
   text-decoration: none;
+}
+
+.section__welcome {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+.section__welcome__h1 {
+  color: #ffffff;
+  font-size: 4rem;
+}
+@media screen and (max-width: 480px) {
+  .section__welcome__h1 {
+    text-align: center;
+  }
+}
+.section__welcome__p {
+  color: #BE3144;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: hidden;
 }/*# sourceMappingURL=styles.css.map */

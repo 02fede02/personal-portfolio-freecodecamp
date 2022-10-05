@@ -1,0 +1,19 @@
+.section__welcome{
+    @include flex(column, nowrap, center, center);
+    height: 100vh;
+    background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+
+    &__h1{
+        color: $color-2;
+        font-size: 4rem;
+
+        @include mv(){
+            text-align: center;
+        }
+    }
+
+    &__p{
+        color: $color-1;
+    }
+}
+

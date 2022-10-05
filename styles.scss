@@ -24,4 +24,7 @@ html{
     height: 100%; // No se porque es esto 
 
     // Aplicar medai queries y ver que onda con el menu fijo  si se pude hacer de otra forma
+    @include mv(){
+        font-size: 1em;
+    }
 }

@@ -23,4 +23,9 @@ html {
   gap: 1rem;
   font-size: 2em;
   height: 100%;
+}
+@media screen and (max-width: 480px) {
+  .header__ul {
+    font-size: 1em;
+  }
 }/*# sourceMappingURL=styles.css.map */

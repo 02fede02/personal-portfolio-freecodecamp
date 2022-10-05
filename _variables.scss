@@ -6,6 +6,11 @@
     align-items: $align;
 }
 
+@mixin mv( $medida: 480px){
+    @media screen and (max-width: $medida){
+        @content;
+    }
+}
 
 
 $color-1: #BE3144;

@@ -92,16 +92,111 @@
   text-decoration: none;
   background-color: #303841;
 }
+.section__work__a:hover .section__work__span {
+  visibility: visible;
+}
 .section__work__img {
   max-width: 400px;
   height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
 }
+.section__work__p {
+  background-color: #303841;
+  font-size: 1.25rem;
+  padding: 0.75rem;
+}
+.section__work__span {
+  visibility: hidden;
+  color: #ff7f50;
+  transition: color 0.3s ease-out;
+}
+.section__work__div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: unset;
+}
+.section__work__button {
+  margin-top: 4rem;
+  width: 12%;
+  padding: 0.75rem;
+  background-color: #303841;
+  border: none;
+  transition: 1s;
+}
+.section__work__button:hover {
+  background-color: #BE3144;
+}
 @media screen and (max-width: 480px) {
-  .section__work__img {
+  .section__work__button {
     width: auto;
   }
+}
+.section__work__button--a {
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.section__contact {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: #303841;
+  border-bottom: solid 0.4rem #BE3144;
+  color: #ffffff;
+}
+.section__contact__h2 {
+  font-size: 3.5rem;
+}
+@media screen and (max-width: 480px) {
+  .section__contact__h2 {
+    text-align: center;
+    margin-top: -7rem;
+    margin-bottom: 1rem;
+  }
+}
+.section__contact__p {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #A0A3A7;
+}
+.section__contact__div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: unset;
+  align-items: unset;
+  gap: 2rem;
+  padding: 2rem;
+  font-size: 2rem;
+}
+@media screen and (max-width: 480px) {
+  .section__contact__div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: unset;
+    align-items: unset;
+    gap: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: -7rem;
+  }
+}
+.section__contact__a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: transform 0.3s ease-out;
+}
+.section__contact__a:hover {
+  transform: translateY(1rem);
+}
+
+.footer {
+  background-color: #303841;
 }
 
 * {

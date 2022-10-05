@@ -24,8 +24,12 @@
     }
 
     &__a {
-        @include color-align-deco($color-2, center, none); 
+        @include color-align-deco($color-2, center, none);
         background-color: $color-4;
+
+        &:hover .section__work__span {
+            visibility: visible;
+        }
     }
 
     &__img {
@@ -33,8 +37,48 @@
         height: 400px;
         object-fit: cover;
 
+    }
+
+    &__p {
+        background-color: $color-4;
+        font-size: 1.25rem;
+        padding: 0.75rem;
+    }
+
+    &__span {
+        visibility: hidden;
+        color: #ff7f50;
+        transition: color 0.3s ease-out;
+    }
+
+    &__div{
+        @include flex(row, nowrap, center, unset)
+    }
+
+    &__button {
+        margin-top: 4rem;
+        width: 12%;
+        padding: 0.75rem;
+        background-color: $color-4;
+        border: none;
+        transition: 1s;
+
+        &:hover {
+            background-color: $color-1;
+        }
+
         @include mv(){
             width: auto;
         }
+
+        &--a {
+            @include color-align-deco($color-2, center, none);
+            font-size: 1.25rem;
+            font-weight: bold;
+
+            
+        }
     }
+
+
 }

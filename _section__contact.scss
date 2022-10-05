@@ -1,0 +1,47 @@
+.section__contact{
+    @include flex(column, nowrap, center, center);
+    height: 80vh;
+    background-color: $color-4;
+    border-bottom: solid 0.4rem $color-1;
+    color: $color-2;
+
+    &__h2{
+        font-size: 3.5rem;
+
+        @include mv(){
+            text-align: center;
+            margin-top: -7rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__p{
+        font-style: italic;
+        font-size: 1.1rem;
+        color: $color-5;
+    }
+
+    &__div{
+        @include flex(row, nowrap, unset, unset);
+        gap: 2rem;
+        padding: 2rem;
+        font-size: 2rem;
+
+        @include mv(){
+            @include flex(column, nowrap, unset, unset);
+            gap: 1rem;
+            font-size: 1.5rem;
+            margin-bottom: -7rem;
+        }
+    }
+
+    &__a{
+        text-decoration: none;
+        color: $color-2;
+        transition: transform 0.3s ease-out;
+        
+        &:hover{
+            transform: translateY(1rem)
+        }
+    }
+}

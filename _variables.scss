@@ -1,0 +1,11 @@
+
+@mixin flex( $direction : row, $wrap : nowrap, $justify : unset, $align : unset) {
+    display: flex;
+    flex-flow: $direction $wrap;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
+
+$color-1: #BE3144;

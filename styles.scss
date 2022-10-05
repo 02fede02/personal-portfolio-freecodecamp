@@ -1,11 +1,4 @@
-
-$color-1: #BE3144;
-@mixin flex( $direction : row, $wrap : nowrap, $justify : unset, $align : unset) {
-    display: flex;
-    flex-flow: $direction $wrap;
-    justify-content: $justify;
-    align-items: $align;
-}
+@import "variables";
 
 *{
     margin: 0;

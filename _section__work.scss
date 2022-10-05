@@ -1,0 +1,40 @@
+.section__work {
+    background-color: $color-3;
+    padding: 4rem;
+
+    &__h2 {
+        @include color-align-deco($color-2, center, underline);
+        font-size: 2.5rem;
+        text-underline-offset: 1rem;
+        margin-bottom: 3rem;
+
+        @include mv() {
+            font-size: 2rem;
+            margin-bottom: 5rem;
+        }
+    }
+
+    &__ul {
+        @include flex(row, wrap, center, unset);
+    }
+
+    &__li {
+        padding: 2rem;
+        list-style: none;
+    }
+
+    &__a {
+        @include color-align-deco($color-2, center, none); 
+        background-color: $color-4;
+    }
+
+    &__img {
+        max-width: 400px;
+        height: 400px;
+        object-fit: cover;
+
+        @include mv(){
+            width: auto;
+        }
+    }
+}

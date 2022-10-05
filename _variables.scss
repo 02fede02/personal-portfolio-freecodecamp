@@ -12,6 +12,14 @@
     }
 }
 
+@mixin color-align-deco($color, $al, $deco){
+    color: $color;
+    text-align: $al;
+    text-decoration: $deco;
+}
+
 
 $color-1: #BE3144;
 $color-2: #ffffff;
+$color-3: #45567d;
+$color-4: #303841;
